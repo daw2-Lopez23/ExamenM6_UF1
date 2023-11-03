@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personas Famosas</title>
+  <link rel="stylesheet" href="">
+  <style>
+    #imagenPersonaje {
+      width: 200px;
+      height: auto;
+    }
+    .bg-primary {
+      background-color: #09ff00;
+      color: #fff; 
+    }
+    .text-light {
+      color: #000000;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Personas Famosas</h1>
+    <div>
+      <select id="personajes">
+        <option value="Albert Einstein">Albert Einstein</option>
+        <option value="Martin Luther King Jr.">Martin Luther King Jr.</option>
+        <option value="Mahatma Gandhi">Mahatma Gandhi</option>
+        <option value="William Shakespeare">William Shakespeare</option>
+        <option value="Marilyn Monroe">Marilyn Monroe</option>
+        <option value="Abraham Lincoln">Abraham Lincoln</option>
+        <option value="Winston Churchill">Winston Churchill</option>
+        <option value="Coco Chanel">Coco Chanel</option>
+        <option value="Nelson Mandela">Nelson Mandela</option>
+        <option value="Steve Jobs">Steve Jobs</option>
+        <option value="Audrey Hepburn">Audrey Hepburn</option>
+        <option value="Mark Twain">Mark Twain</option>
+      </select>
+      <button id="verPersonaje">Ver personaje</button>
+    </div>
+    <div id="tarjeta" class="hidden">
+      <img id="imagenPersonaje" src="" alt="">
+      <h2 id="nombrePersonaje"></h2>
+      <p id="fraseCelebre"></p>
+      <div>
+        <input type="text" id="buscador" placeholder="Buscar frase...">
+        <button id="buscarFrase">Buscar</button>
+      </div>
+      <p id="fraseColor"></p>
+      <p id="momentoConsulta"></p>
+    </div>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
